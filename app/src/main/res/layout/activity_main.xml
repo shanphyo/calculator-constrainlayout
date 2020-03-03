@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<TextView
+    android:id="@+id/txt_team"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:text="Our Team"
+    android:gravity="center"
+    android:textSize="20sp"
+    android:paddingTop="20dp"
+    android:textStyle="bold"
+    android:textColor="@android:color/black"
+    />
+    <LinearLayout
+        android:id="@+id/ll_firstimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txt_team"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/ll_secondimage"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:elevation="2dp"
+            app:cardCornerRadius="60dp"
+
+
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mc"
+                />
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Adams G "
+            android:textColor="@android:color/black"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Execytive Officer "
+            android:textColor="@android:color/black"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_secondimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txt_team"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toRightOf="@id/ll_firstimage"
+        app:layout_constraintRight_toLeftOf="@id/ll_thirdimage"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:elevation="2dp"
+            app:cardCornerRadius="60dp"
+
+
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mc"
+                />
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Betty L "
+            android:textColor="@android:color/black"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   Marketing    "
+            android:textColor="@android:color/black"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_thirdimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txt_team"
+        app:layout_constraintLeft_toRightOf="@id/ll_secondimage"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:layout_marginRight="0dp"
+        android:gravity="center"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:elevation="2dp"
+            app:cardCornerRadius="60dp"
+
+
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mc"
+                />
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Roberts  "
+            android:textColor="@android:color/black"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Business Analyst "
+            android:textColor="@android:color/black"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_fourthimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/ll_secondimage"
+        app:layout_constraintTop_toBottomOf="@id/ll_firstimage"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:elevation="2dp"
+            app:cardCornerRadius="60dp"
+
+
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mc" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Miller W"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Ux Designer "
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_fifthimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_secondimage"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:elevation="2dp"
+            app:cardCornerRadius="60dp"
+
+
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mc" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Kevin John "
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   Web Developer "
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_siximage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ll_thirdimage"
+        app:layout_constraintLeft_toRightOf="@id/ll_fifthimage"
+        android:layout_marginTop="30dp"
+
+        android:layout_marginRight="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:elevation="2dp"
+            app:cardCornerRadius="60dp"
+
+
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mc"
+                />
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Laura M "
+            android:textColor="@android:color/black"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   Mobile Developer "
+            android:textColor="@android:color/black"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txt_mission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_fifthimage"
+        android:text="Mission"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_margin="30dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txt_mission"
+        android:paddingLeft="20dp"
+        android:text=" Duis tellus meuts, elementum a lectus id, aliquet \n interdum
+maruis. Nam bibendum efficitur \n sollicitudin.
+Proineleifend libero velit, nec fringilla  \n dolor finibus quis, nMorbi eu libero pellentesque, \n
+rutrum metus quis, blanist est, Fusce bibebdum \n
+accumsan nisi vulputate feugiat. In fermentum\n
+laoreet euismod. Praesent sem nisl, facilisis eget\n
+odio at, rhoncus scelerisque ipsum. Nulla orci dui,\n
+dignissim a risus ut, lobortis porttitor velit.\n \n
+Nulla id lectus metus. Maecenas a lorem in odio \n auctor facilisis
+ non vitate nunc. Sed malesuada \n volutpat massa. Praesent sit amet lacinia augue"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
